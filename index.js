@@ -1,15 +1,17 @@
  require('dotenv').config();
- 
- const express = require("express");
+ const path = require("path")
+const express = require("express");
  const cors = require('cors');
  const mongoose = require('mongoose');
  const app = express();
  const userRoutes = require("./routes/userRoutes")
  const messageRoute = require("./routes/messageRoutes")
  const socket = require("socket.io")
-
- app.use(express.static('public/build'))
  app.use(cors());
+ 
+ app.use(express.static('public/build'))
+ 
+    
  app.use(express.json());
 
  app.use("/api/auth", userRoutes)

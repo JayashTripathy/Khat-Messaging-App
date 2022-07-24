@@ -19,6 +19,7 @@ function Contacts({ contacts, currentUser, changeChat }) {
 
   return (
     <>
+    
       {currentUserName && currentUserImage && (
         <Container>
           <div className="brand">
