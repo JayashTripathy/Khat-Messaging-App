@@ -8,11 +8,13 @@ const express = require("express");
  const messageRoute = require("./routes/messageRoutes")
  const socket = require("socket.io")
  
+ app.use(cors({
+    origin: "*"
+ }));
  app.use(express.static('public/build'))
  
  
  app.use(express.json());
- app.use(cors());
  
  app.use("/api/auth", userRoutes)
  app.use("/api/message", messageRoute)
