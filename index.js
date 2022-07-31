@@ -8,7 +8,7 @@ const express = require("express");
  const messageRoute = require("./routes/messageRoutes")
  const socket = require("socket.io")
  
- app.use(cors({origin: "https://khat-app.herokuapp.com"}))
+ app.use(cors({origin: "*"}))
  app.use(express.static('public/build'))
  
  
