@@ -1,4 +1,4 @@
-export const host = process.env.PORT
+export const host = "https://khat-app.herokuapp.com"
 export const registerRoute = `${host}/api/auth/register`
 export const loginRoute = `${host}/api/auth/login`
 export const setAvatarRoute = `${host}/api/auth/setAvatar`
