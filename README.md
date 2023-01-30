@@ -22,7 +22,7 @@ Go to the project directory
 
 ```bash
   cd Khat-Messaging-App
-  cd server
+ 
 ```
 
 Install dependencies
