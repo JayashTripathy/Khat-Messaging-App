@@ -30,6 +30,12 @@ Install dependencies
   npm install
 ```
 
+make a `.env` file on root directory with
+```bash
+  PORT = 5000
+  MONGO_URL = "YOUR_MONGODB_URL"
+```
+
 Start the server
 
 ```bash
